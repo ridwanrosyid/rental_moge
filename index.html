@@ -3,27 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rental Moge</title>
+  <title>Login - Rental Moge</title>
   <style>
     body {
+      background-color: #f0f0f0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
-      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-box {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      width: 300px;
+    }
+    h2 {
+      margin-bottom: 20px;
       text-align: center;
-      padding-top: 100px;
     }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
+    input[type=email], input[type=password] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
     }
-    p {
-      font-size: 1.2em;
-      color: #ddd;
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: not-allowed;
+    }
+    .note {
+      font-size: 0.8em;
+      text-align: center;
+      margin-top: 10px;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <h1>Selamat Datang di Rental Moge</h1>
-  <p>Website ini sedang dalam tahap pengembangan.</p>
+  <div class="login-box">
+    <h2>Login</h2>
+    <form>
+      <input type="email" placeholder="Email" disabled>
+      <input type="password" placeholder="Password" disabled>
+      <button disabled>Login</button>
+      <div class="note">(Demo tampilan saja)</div>
+    </form>
+  </div>
 </body>
 </html>
